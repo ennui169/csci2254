@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <style>
+  div{
+    color:white;
+  }
+  .whole{
+   background-color:darkgray;
+   height: 150px;
+   width:500px;
+  }
+  .a{
+     background-color:red;
+     height:75px;
+     width:250px;
+     z-index:2;
+  }
+  .b{
+    background-color:orange;
+    height:75px;
+    width:250px;
+    float:right;
+    position:relative;
+    bottom:0px;
+    z-index:2;
+  }
+  .blue{
+    background-color:blue;
+    height:75px;
+    width:125px;
+    float:right;
+    position:relative;
+    z-index:5;
+  }
+  </style>
+</head>
+<body>
+  <div class = "whole">
+    <div class="a">A</div>
+    <div class="b">
+      B
+        <div class="blue"></div>
+    </div>
+  </div>
+</body>
+</html>
